@@ -1,0 +1,13 @@
+{
+  "name": "gulp",
+  "description": "Gulp based template",
+  "main": "index.js",
+  "authors": [
+    "Sergey"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SergeyDobrinyn/gulp",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
