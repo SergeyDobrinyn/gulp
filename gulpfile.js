@@ -28,6 +28,7 @@ let {src, dest} = require("gulp"),
   gulp = require("gulp"),
   browsersync = require("browser-sync").create();
 
+// * Syncing with browsers
 function sync() {
   browsersync.init({
     server: {
