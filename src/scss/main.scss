@@ -1,3 +1,20 @@
 * {
   box-sizing: border-box;
 }
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .block {
+      flex-basis: 24%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+}
