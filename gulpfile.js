@@ -1,4 +1,5 @@
 let project_folder = "dist";
+// ! let project_folder = require("path").basename(__dirname);
 let source_folder = "src";
 let path = {
   build: {
@@ -54,9 +55,12 @@ function html() {
 function files() {
   gulp.watch([path.watch.html],html);
   gulp.watch([path.watch.css],css);
+  // * gulp.watch([path.watch.js],js);
+  // * gulp.watch([path.watch.img],images);
+  // * gulp.watch([path.watch.fonts],fonts);
 }
 
-// * Deleting dist directory
+// ! Deleting dist directory
 function clean() {
   return del(path.clean);
 }

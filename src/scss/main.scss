@@ -1,7 +1,12 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #FF6600;
+}
 .wrap {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,7 +17,7 @@
     justify-content: space-between;
     align-items: flex-start;
     .block {
-      flex-basis: 24%;
+      flex-basis: 20%;
       flex-grow: 1;
       flex-shrink: 1;
     }
