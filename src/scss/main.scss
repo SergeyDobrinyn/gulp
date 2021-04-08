@@ -7,21 +7,16 @@ body {
 .wrap {
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
 }
 .cont {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 1;
-  flex-shrink: 1;
   justify-content: space-between;
   align-items: flex-start;
 }
 .block {
   flex-grow: 1;
   flex-shrink: 1;
+  flex-basis: 25%;
 }
