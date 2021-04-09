@@ -38,6 +38,8 @@ let {src, dest} = require("gulp"),
   rename = require("gulp-rename"),
   jsmin = require("gulp-uglify-es").default,
   imagemin = require("gulp-imagemin");
+  /* webp = require("gulp-webp"),
+  webphtml = require("gulp-webp-html") */
 
 // * Syncing with browsers
 function sync() {
@@ -55,6 +57,7 @@ function sync() {
 function html() {
   return src(path.src.html)
     .pipe(fileinclude())
+    // .pipe(webphtml())
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream())
 }
@@ -109,6 +112,11 @@ function js() {
 // * Images
 function images() {
   return src(path.src.img)
+    /* .pipe(webp({
+      quality: 80
+    }))
+    .pipe(dest(path.build.img))
+    .pipe(src(path.src.img)) */
     .pipe(imagemin({
       progressive: true,
       interlaced: true,
